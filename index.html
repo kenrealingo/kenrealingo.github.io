@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ken Realingo &middot; UP Diliman Code of Conduct</title>
-    <title>Ken Realingo</title>
     <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <df-messenger
@@ -17,19 +16,7 @@
       </df-messenger-chat-bubble>
     </df-messenger>
     <style>
-      df-messenger {
-      z-index: 999;
-      position: fixed;
-      --df-messenger-font-color: #000;
-      --df-messenger-font-family: Google Sans;
-      --df-messenger-chat-background: #f3f6fc;
-      --df-messenger-message-user-background: #d3e3fd;
-      --df-messenger-message-bot-background: #fff;
-      bottom: 16px;
-      right: 16px;
-      }
-    </style>
-    <style>
+      /* General Styles */
       * {
       margin: 0;
       padding: 0;
@@ -38,15 +25,17 @@
       body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      margin: 0;
       }
       /* Hero Section */
       .hero {
       position: relative;
       height: 50vh;
-      min-height: 400px;
+      min-height: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
       }
       .hero-image {
       position: absolute;
@@ -60,47 +49,47 @@
       .hero-title {
       position: relative;
       color: white;
-      font-size: 3rem;
+      font-size: 2rem;
       text-align: center;
       padding: 0 1rem;
       z-index: 1;
       }
       /* Content Section */
       .main-content {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       }
       .content-wrapper {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      margin-bottom: 3rem;
-      gap: 1rem;
+      text-align: center;
+      gap: 1.5rem;
       }
       .logo {
-      width: 200px;
+      width: 150px;
+      max-width: 100%;
       height: auto;
       }
       .chatbot-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: bold;
-      text-align: center;
       color: #166534;
-      margin-bottom: 2rem;
       }
       .disclaimer-box {
       background-color: #fefce8;
-      padding: 1.5rem;
+      padding: 1rem;
       border-radius: 0.5rem;
       border: 1px solid #fef08a;
+      text-align: left;
       }
       .disclaimer-text {
       font-weight: 500;
       margin-bottom: 1rem;
       }
       .important-notes {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 600;
       margin-bottom: 1rem;
       }
@@ -109,11 +98,50 @@
       margin: 1rem 0;
       }
       .notes-list li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       }
       .footer-text {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       font-weight: 500;
+      }
+      /* Chat Widget Styling */
+      df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+      }
+      /* Responsive Styles */
+      @media (min-width: 768px) {
+      .hero-title {
+      font-size: 3rem;
+      }
+      .content-wrapper {
+      flex-direction: row;
+      text-align: left;
+      }
+      .chatbot-title {
+      text-align: left;
+      }
+      }
+      @media (max-width: 480px) {
+      .hero {
+      height: 40vh;
+      }
+      .hero-title {
+      font-size: 1.5rem;
+      }
+      .main-content {
+      padding: 1rem;
+      }
+      .chatbot-title {
+      font-size: 1.5rem;
+      }
       }
     </style>
   </head>
