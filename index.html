@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Realingo &middot; UP Diliman Code of Conduct</title>
     <title>Ken Realingo</title>
     <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
@@ -28,7 +29,130 @@
       right: 16px;
       }
     </style>
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+      body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      }
+      /* Hero Section */
+      .hero {
+      position: relative;
+      height: 50vh;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .hero-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+      }
+      .hero-title {
+      position: relative;
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      padding: 0 1rem;
+      z-index: 1;
+      }
+      /* Content Section */
+      .main-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      }
+      .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+      }
+      .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 2rem;
+      }
+      .chatbot-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      color: #166534;
+      margin-bottom: 2rem;
+      }
+      .disclaimer-box {
+      background-color: #fefce8;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid #fef08a;
+      }
+      .disclaimer-text {
+      font-weight: 500;
+      margin-bottom: 1rem;
+      }
+      .important-notes {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      }
+      .notes-list {
+      list-style-position: inside;
+      margin: 1rem 0;
+      }
+      .notes-list li {
+      margin-bottom: 1rem;
+      }
+      .footer-text {
+      margin-top: 1.5rem;
+      font-weight: 500;
+      }
+    </style>
   </head>
   <body>
+    <!-- Hero Section -->
+    <div class="hero">
+      <img src="upd-oblation.jpg" alt="UP Diliman Oblation" class="hero-image">
+      <h1 class="hero-title">UP Diliman Code of Conduct</h1>
+    </div>
+    <!-- Content Section -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <img src="upd-logo-2019.png" alt="UPD Logo" class="logo">
+        <h2 class="chatbot-title">CODE OF CONDUCT AI CHATBOT</h2>
+        <div class="disclaimer-box">
+          <p class="disclaimer-text">
+            Disclaimer: This website is a personal project and is not affiliated with or endorsed by the University of the Philippines Diliman. 
+            The content provided by this ChatBot is based on the UP Diliman Code of Conduct, which remains the property of the University of the Philippines Diliman.
+          </p>
+          <h3 class="important-notes">Important Notes:</h3>
+          <ol class="notes-list">
+            <li>
+              <strong>Unofficial Resource:</strong> This ChatBot is intended for informational and educational purposes only. 
+              It does not represent the official stance of the university.
+            </li>
+            <li>
+              <strong>No Guarantees:</strong> While efforts have been made to ensure accuracy, the information provided may contain errors or omissions. 
+              Always refer to the official UP Diliman Code of Conduct for authoritative guidance.
+            </li>
+            <li>
+              <strong>Privacy:</strong> This is a prototype system, and conversations may be logged for testing and improvement purposes. 
+              No personal information is stored or shared.
+            </li>
+          </ol>
+          <p class="footer-text">
+            By using this website, you acknowledge that it is a personal project and agree to refer to official university resources for formal matters.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
